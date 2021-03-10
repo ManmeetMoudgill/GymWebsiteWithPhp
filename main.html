@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Hello there</title>
+  </head>
+  <body>
+    <form id="form">
+ <input type="number" name="" id="entrante" value="" />
+ </form>
+    <button id="buttone"type="button">Buttone1</button>
+    <h1 id="Risultato"></h1>
+    
+  </body>
+  <script type="text/javascript" charset="utf-8">
+    console.log('hello there')
+    let buttons=document.querySelector('button');
+    let arrayValue=new Array();/* creato array al fouri di eventListener */
+    
+    document.getElementById('buttone').addEventListener('click',()=>{
+      let sum=0;
+        var valore=document.getElementById('entrante').value;
+        valore=parseInt(valore);       /* converto la stringa in int */
+        arrayValue.push(valore);       /* nomeArray.push(valore) push si utilizza per inserire il valore diento array */
+        document.getElementById('form').reset();       /* qui ho usato .reset() resettare il form */
+
+
+        
+        /* poi ho usato ciclo for per fare la somma di tutti i valori presenti dientro array */
+        for(var i=0;i<arrayValue.length;i++){
+              sum+=arrayValue[i];
+            }
+        document.getElementById('Risultato').innerText=`La Somma delle Entrate è:${sum}`;
+    })
+
+    
+    
+    
+          
+        
+  
+  
+  </script>
+</html>

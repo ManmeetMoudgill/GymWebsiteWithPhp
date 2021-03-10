@@ -1,0 +1,16 @@
+*{
+     margin: 0px;
+     padding: 0px;
+
+ }
+img.logoImage {
+    width: 3rem;
+}
+.logo {
+    margin: 0.5rem 0.5rem;
+    margin-right: 3.5rem;
+}
+
+*{
+    scroll-behavior: smooth;
+}
